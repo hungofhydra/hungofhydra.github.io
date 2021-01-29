@@ -168,6 +168,19 @@ legend {
     padding: 5px;
     margin-bottom: 5px;
 }
+
+.div_charA {
+    border-style: groove;
+    border-color: rgba(35, 148, 223, 0.733);
+    width: 2048px;
+    height: 800px;
+    margin-left: 1%;
+    background-color: #bebebe41;
+    border-left: solid 8px #ad1400;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
 .pic {
     width: 175;
     height: 250;
