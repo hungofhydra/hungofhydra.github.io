@@ -176,7 +176,19 @@ legend {
     height: 800px;
     margin-left: 1%;
     background-color: #bebebe41;
-    border-left: solid 8px #ad1400;
+    border-left: solid 8px #ff9900;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.div_charB {
+    border-style: groove;
+    border-color: rgba(35, 148, 223, 0.733);
+    width: 2048px;
+    height: 800px;
+    margin-left: 1%;
+    background-color: #bebebe41;
+    border-left: solid 8px #ea08ff;
     padding: 5px;
     margin-bottom: 5px;
 }
