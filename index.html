@@ -3523,7 +3523,7 @@
                         <div class="row">
 
                             <div class = "p1" style="margin-left: 35px;">
-                                31/01/2021 --> Hoàn thành Character Lucia và Liv.
+                                31/01/2021 --> Hoàn thành Character Lee, Lucia và Liv.
                                 <br><br>                               
                             </div>
 
@@ -3811,6 +3811,22 @@
             $('#div_Liv').load('resources/html/character/Liv.html');
         } else {
             $('#div_Liv').html("");
+        }
+    });
+	
+	$('#Lee').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_Lee').load('resources/html/character/Lee.html');
+        } else {
+            $('#div_Lee').html("");
+        }
+    });
+
+    $('#checkbox2_3').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_Lee').load('resources/html/character/Lee.html');
+        } else {
+            $('#div_Lee').html("");
         }
     });
 	
