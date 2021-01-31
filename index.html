@@ -1526,7 +1526,7 @@
 
             <div class="div6s">
 
-                <b style="color: red;">koya</b><br>
+                <b style="color: red;">Koya</b><br>
 
                 <img src="resources/pic/memory/6s/koya.webp" style="position: relative;float: right;margin-top: -5%;">
 
@@ -3330,6 +3330,8 @@
             </div>
 
         </fieldset>
+		
+		
 	
 		<fieldset style="margin-top: -20px;width: 96vw;" id="mobile_weapon_cp">
             <legend>Control Panel</legend>
@@ -3827,6 +3829,38 @@
             $('#div_Lee').load('resources/html/character/Lee.html');
         } else {
             $('#div_Lee').html("");
+        }
+    });
+	
+	('#Chrome').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_Chrome').load('resources/html/character/Chrome.html');
+        } else {
+            $('#div_Chrome').html("");
+        }
+    });
+
+    $('#checkbox2_4').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_Chrome').load('resources/html/character/Chrome.html');
+        } else {
+            $('#div_Chrome').html("");
+        }
+    });
+	
+	('#Kamui').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_Kamui').load('resources/html/character/Kamui.html');
+        } else {
+            $('#div_Kamui').html("");
+        }
+    });
+
+    $('#checkbox2_5').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_Kamui').load('resources/html/character/Kamui.html');
+        } else {
+            $('#div_Kamui').html("");
         }
     });
 	
