@@ -3525,7 +3525,7 @@
                         <div class="row">
 
                             <div class = "p1" style="margin-left: 35px;">
-                                01/02/2021 --> Hoàn thành Ayla.
+                                01/02/2021 --> Hoàn thành Karen.
                                 <br><br>                               
                             </div>
 
@@ -3894,6 +3894,22 @@
             $('#div_Ayla').load('resources/html/character/Ayla.html');
         } else {
             $('#div_Ayla').html("");
+        }
+    });
+	
+	$('#Karen').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_Karen').load('resources/html/character/Karen.html');
+        } else {
+            $('#div_Karen').html("");
+        }
+    });
+
+    $('#checkbox2_7').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_Karen').load('resources/html/character/Karen.html');
+        } else {
+            $('#div_Karen').html("");
         }
     });
 	
