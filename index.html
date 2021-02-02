@@ -3073,6 +3073,7 @@
                 <input id="Spear" type="checkbox" style="margin-left: 10px;"> Giáo
                 <input id="Swords" type="checkbox" style="margin-left: 10px;"> Kiếm
 				<input id="Amplifier" type="checkbox" style="margin-left: 10px;"> Amplifier
+				<input id="Gauntlet" type="checkbox" style="margin-left: 10px;"> Găng
             </div>
 
         </fieldset>
@@ -3092,7 +3093,8 @@
                 <li style="margin-left: 5px;"><input type="checkbox" id="checkbox9" value="Scythe"><label for="checkbox9">SCY</label></li>
                 <li style="margin-left: 5px;"><input type="checkbox" id="checkbox11" value="Spears"><label for="checkbox11">SPR</label></li>
                 <li style="margin-left: 5px;"><input type="checkbox" id="checkbox10" value="Swords"><label for="checkbox10">SWD</label></li>
-				<li style="margin-left: 5px;"><input type="checkbox" id="checkbox12" value="Amplifier"><label for="checkbox10">AMP</label></li>
+				<li style="margin-left: 5px;"><input type="checkbox" id="checkbox12" value="Amplifier"><label for="checkbox12">AMP</label></li>
+				<li style="margin-left: 5px;"><input type="checkbox" id="checkbox13" value="Gauntlet"><label for="checkbox13">AMP</label></li>
             </div>
 
         </fieldset>
@@ -3303,6 +3305,9 @@
         </div>
 		
 		<div id="div_amplifier" style="text-align: justify;">
+        </div>
+		
+		<div id="div_gauntlet" style="text-align: justify;">
         </div>
 
     </div>
@@ -3530,7 +3535,7 @@
                         <div class="row">
 
                             <div class = "p1" style="margin-left: 35px;">
-                                01/02/2021 --> Hoàn thành Ayla, Karen và Nanami.
+                                01/02/2021 --> Hoàn thành Gauntlet.
                                 <br><br>                               
                             </div>
 
@@ -3787,7 +3792,7 @@
         });
     });
 	
-	 $('#Amplifier').click(function () {
+	$('#Amplifier').click(function () {
         if ($(this).is(':checked')) {
             $('#div_amplifier').load('resources/html/weapon/amplifier.html');
         } else {
@@ -3800,6 +3805,22 @@
             $('#div_amplifier').load('resources/html/weapon/amplifier.html');
         } else {
             $('#div_amplifier').html("");
+        }
+    });
+	
+	('#Gauntlet').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_gauntlet').load('resources/html/weapon/gauntlet.html');
+        } else {
+            $('#div_gauntlet').html("");
+        }
+    });
+
+    $('#checkbox13').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_gauntlet').load('resources/html/weapon/gauntlet.html');
+        } else {
+            $('#div_gauntlet').html("");
         }
     });
 	
