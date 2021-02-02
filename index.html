@@ -3072,6 +3072,7 @@
                 <input id="Scythe" type="checkbox" style="margin-left: 10px;"> Lưỡi Hái
                 <input id="Spear" type="checkbox" style="margin-left: 10px;"> Giáo
                 <input id="Swords" type="checkbox" style="margin-left: 10px;"> Kiếm
+				<input id="Amplifier" type="checkbox" style="margin-left: 10px;"> Amplifier
             </div>
 
         </fieldset>
@@ -3091,6 +3092,7 @@
                 <li style="margin-left: 5px;"><input type="checkbox" id="checkbox9" value="Scythe"><label for="checkbox9">SCY</label></li>
                 <li style="margin-left: 5px;"><input type="checkbox" id="checkbox11" value="Spears"><label for="checkbox11">SPR</label></li>
                 <li style="margin-left: 5px;"><input type="checkbox" id="checkbox10" value="Swords"><label for="checkbox10">SWD</label></li>
+				<li style="margin-left: 5px;"><input type="checkbox" id="checkbox12" value="Amplifier"><label for="checkbox10">AMP</label></li>
             </div>
 
         </fieldset>
@@ -3298,6 +3300,9 @@
         </div>
 
         <div id="div_swords" style="text-align: justify;">
+        </div>
+		
+		<div id="div_amplifier" style="text-align: justify;">
         </div>
 
     </div>
@@ -3780,6 +3785,22 @@
         $(".hide-modal").click(function(){
             $("#credit_modal").modal('hide');
         });
+    });
+	
+	 $('#Amplifier').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_amplifier').load('resources/html/weapon/amplifier.html');
+        } else {
+            $('#div_amplifier').html("");
+        }
+    });
+
+    $('#checkbox12').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_amplifier').load('resources/html/weapon/amplifier.html');
+        } else {
+            $('#div_amplifier').html("");
+        }
     });
 	
 	
