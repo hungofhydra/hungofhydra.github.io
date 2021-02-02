@@ -3545,7 +3545,7 @@
                         <div class="row">
 
                             <div class = "p1" style="margin-left: 35px;">
-                                01/02/2021 --> Hoàn Thành Bianca, Rosetta.
+                                01/02/2021 --> Hoàn Thành Bianca, Rosetta,Luna.
                                 <br><br>                               
                             </div>
 
@@ -4026,6 +4026,22 @@
             $('#div_Rosetta').load('resources/html/character/Rosetta.html');
         } else {
             $('#div_Rosetta').html("");
+        }
+    });
+	
+	$('#Luna').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_Luna').load('resources/html/character/Luna.html');
+        } else {
+            $('#div_Luna').html("");
+        }
+    });
+
+    $('#checkbox2_12').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_Luna').load('resources/html/character/Luna.html');
+        } else {
+            $('#div_Luna').html("");
         }
     });
 	
