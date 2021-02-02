@@ -3074,6 +3074,7 @@
                 <input id="Swords" type="checkbox" style="margin-left: 10px;"> Kiếm
 				<input id="Amplifier" type="checkbox" style="margin-left: 10px;"> Amplifier
 				<input id="Gauntlet" type="checkbox" style="margin-left: 10px;"> Găng
+				<input id="Compositor_Spear" type="checkbox" style="margin-left: 10px;"> Giáo Của Compositor 
             </div>
 
         </fieldset>
@@ -3095,6 +3096,7 @@
                 <li style="margin-left: 5px;"><input type="checkbox" id="checkbox10" value="Swords"><label for="checkbox10">SWD</label></li>
 				<li style="margin-left: 5px;"><input type="checkbox" id="checkbox12" value="Amplifier"><label for="checkbox12">AMP</label></li>
 				<li style="margin-left: 5px;"><input type="checkbox" id="checkbox13" value="Gauntlet"><label for="checkbox13">GNT</label></li>
+				<li style="margin-left: 5px;"><input type="checkbox" id="checkbox14" value="Compositor_Spear"><label for="checkbox14">CSP</label></li>
             </div>
 
         </fieldset>
@@ -3308,6 +3310,9 @@
         </div>
 		
 		<div id="div_gauntlet" style="text-align: justify;">
+        </div>
+		
+		<div id="div_compositor_spear" style="text-align: justify;">
         </div>
 
     </div>
@@ -3535,7 +3540,7 @@
                         <div class="row">
 
                             <div class = "p1" style="margin-left: 35px;">
-                                01/02/2021 --> Fix v2.
+                                01/02/2021 --> Hoàn Thành Giáo của Compositor.
                                 <br><br>                               
                             </div>
 
@@ -3821,6 +3826,22 @@
             $('#div_gauntlet').load('resources/html/weapon/gauntlet.html');
         } else {
             $('#div_gauntlet').html("");
+        }
+    });
+	
+	$('#Compositor_Spear').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_compositor_spear').load('resources/html/weapon/compositor_spear.html');
+        } else {
+            $('#div_compositor_greatswords').html("");
+        }
+    });
+
+    $('#checkbox14').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_compositor_spear').load('resources/html/weapon/compositor_spear.html');
+        } else {
+            $('#div_compositor_spear').html("");
         }
     });
 	
