@@ -3339,7 +3339,8 @@
 				<input id="Luna" type="checkbox" style="margin-left: 10px;"> Luna
 				<input id="Watanabe" type="checkbox" style="margin-left: 10px;"> Watanabe
 				<input id="Vera" type="checkbox" style="margin-left: 10px;"> Vera
-				<input id="Chang Yu" type="checkbox" style="margin-left: 10px;"> Chang Yu
+				<input id="Chang_Yu" type="checkbox" style="margin-left: 10px;"> Chang Yu
+				<input id="Sofia" type="checkbox" style="margin-left: 10px;"> Sofia
 				
 				
             </div>
@@ -3367,6 +3368,7 @@
 				<li style="margin-left: 5px;"><input type="checkbox" id="checkbox2_13" value="Watanabe"><label for="checkbox2_13">Watanabe</label></li>
 				<li style="margin-left: 5px;"><input type="checkbox" id="checkbox2_14" value="Vera"><label for="checkbox2_14">Vera</label></li>
 				<li style="margin-left: 5px;"><input type="checkbox" id="checkbox2_15" value="Chang_Yu"><label for="checkbox2_15">Chang Yu</label></li>
+				<li style="margin-left: 5px;"><input type="checkbox" id="checkbox2_16" value="Sofia"><label for="checkbox2_16">Sofia</label></li>
             </div>
 
         </fieldset>
@@ -3527,6 +3529,9 @@
 		<div id="div_Chang_Yu" style="text-align: justify;">
         </div>
 		
+		<div id="div_Sofia" style="text-align: justify;">
+        </div>
+		
     </div>
 
     <!-- Modal -->
@@ -3540,7 +3545,7 @@
                         <div class="row">
 
                             <div class = "p1" style="margin-left: 35px;">
-                                01/02/2021 --> Hoàn Thành Giáo của Compositor.
+                                01/02/2021 --> Hoàn Thành Bianca.
                                 <br><br>                               
                             </div>
 
@@ -3989,6 +3994,22 @@
             $('#div_Nanami').load('resources/html/character/Nanami.html');
         } else {
             $('#div_Nanami').html("");
+        }
+    });
+	
+	$('#Bianca').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_Bianca').load('resources/html/character/Bianca.html');
+        } else {
+            $('#div_Bianca').html("");
+        }
+    });
+
+    $('#checkbox2_9').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_Bianca').load('resources/html/character/Bianca.html');
+        } else {
+            $('#div_Bianca').html("");
         }
     });
 	
